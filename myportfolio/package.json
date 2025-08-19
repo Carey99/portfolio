@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "vite preview --host 0.0.0.0 --port $PORT",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "start": "serve -s dist -l ${PORT:-5000}",
+    "preview": "vite preview --host 0.0.0.0 --port ${PORT:-5000}",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@react-three/cannon": "^6.6.0",
@@ -31,6 +31,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "serve": "^14.2.4",
     "terser": "^5.43.1",
     "vite": "^4.5.3"
   }
