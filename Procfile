@@ -1,1 +1,1 @@
-web: cd myportfolio && serve -s dist -p $PORT
+web: serve -s dist -p $PORT
