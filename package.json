@@ -1,0 +1,8 @@
+{
+  "name": "portfolio-root",
+  "private": true,
+  "scripts": {
+    "build": "cd myportfolio && npm install && npm run build",
+    "start": "cd myportfolio && npm start"
+  }
+}
